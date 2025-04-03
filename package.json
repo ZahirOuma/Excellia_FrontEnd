@@ -1,0 +1,25 @@
+{
+    "name": "nexttutorial",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "eslint": "8.41.0",
+        "eslint-config-next": "13.4.3",
+        "mongoose": "6.11.1",
+        "mongose": "^0.0.2-security",
+        "next": "^13.4.3",
+        "next-auth": "^4.24.11",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-icons": "^5.5.0",
+        "swr": "^2.1.5",
+        "xlsx": "^0.18.5"
+    }
+}

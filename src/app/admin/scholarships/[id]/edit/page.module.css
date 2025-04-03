@@ -1,0 +1,292 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-color: #f5f7fa; /* Mis à jour */
+    min-height: 100vh;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: #2d3748; /* Mis à jour */
+    margin-bottom: 25px;
+    border-bottom: 3px solid #53c28b; /* Mis à jour */
+    padding-bottom: 12px;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  .title::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #45a475; /* Mis à jour */
+  }
+  
+  .formContainer {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .formContainer:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  
+  .rowGroup {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .rowGroup .inputGroup {
+    flex: 1;
+  }
+  
+  .label {
+    font-weight: 600;
+    color: #2d3748; /* Mis à jour */
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+  }
+  
+  .inputGroup:focus-within .label {
+    color: #53c28b; /* Mis à jour */
+  }
+  
+  .input, .textarea, .fileInput {
+    padding: 12px 15px;
+    border: 1.5px solid #e2e8f0; /* Mis à jour */
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background-color: #f7fafc;
+    color: #2d3748; /* Mis à jour */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .input:hover, .textarea:hover, .fileInput:hover {
+    border-color: #e2e8f0; /* Mis à jour */
+  }
+  
+  .input:focus, .textarea:focus {
+    border-color: #53c28b; /* Mis à jour */
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(83, 194, 139, 0.15); /* Mis à jour */
+  }
+  
+  .textarea {
+    resize: vertical;
+    min-height: 120px;
+    line-height: 1.5;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: flex-end;
+  }
+  
+  .submitButton, .cancelButton {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .submitButton {
+    background: linear-gradient(135deg, #53c28b 0%, #45a475 100%); /* Mis à jour */
+    color: white;
+    box-shadow: 0 4px 6px rgba(83, 194, 139, 0.2); /* Mis à jour */
+  }
+  
+  .submitButton:hover {
+    background: linear-gradient(135deg, #45a475 0%, #3d8f65 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(83, 194, 139, 0.25); /* Mis à jour */
+  }
+  
+  .submitButton:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 3px rgba(83, 194, 139, 0.2); /* Mis à jour */
+  }
+  
+  .submitButtonDisabled {
+    background: linear-gradient(135deg, #53c28b 0%, #45a475 100%); /* Mis à jour */
+    color: white;
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  
+  .cancelButton {
+    background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%); /* Mis à jour avec les tons rouges du premier fichier */
+    color: white;
+    box-shadow: 0 4px 6px rgba(229, 62, 62, 0.2); /* Mis à jour */
+  }
+  
+  .cancelButton:hover {
+    background: linear-gradient(135deg, #c53030 0%, #9b2c2c 100%); /* Mis à jour */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(229, 62, 62, 0.3); /* Mis à jour */
+  }
+  
+  .cancelButton:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 3px rgba(229, 62, 62, 0.2); /* Mis à jour */
+  }
+  
+  .cancelButtonDisabled {
+    background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%); /* Mis à jour */
+    color: white;
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  
+  .errorMessage {
+    background-color: #fff5f5; /* Mis à jour */
+    color: #c53030; /* Mis à jour */
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #fed7d7; /* Mis à jour */
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .errorMessage::before {
+    content: "⚠️";
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .fileInput {
+    padding: 12px;
+    background-color: #f7fafc; /* Mis à jour */
+    cursor: pointer;
+  }
+  
+  .fileInput::-webkit-file-upload-button {
+    background-color: #53c28b; /* Mis à jour */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .fileInput::-webkit-file-upload-button:hover {
+    background-color: #45a475; /* Mis à jour */
+  }
+  
+  /* Ajouts pour améliorer l'expérience utilisateur */
+  .input::placeholder, .textarea::placeholder {
+    color: #a0aec0; /* Mis à jour */
+    opacity: 0.7;
+  }
+  
+  .requiredField::after {
+    content: "*";
+    color: #e53e3e; /* Mis à jour */
+    margin-left: 4px;
+  }
+  
+  .helpText {
+    font-size: 0.85rem;
+    color: #718096; /* Mis à jour */
+    margin-top: 5px;
+  }
+  
+  /* Amélioration pour l'accessibilité */
+  @media (prefers-reduced-motion: reduce) {
+    .submitButton, .cancelButton, .input, .textarea, .fileInput {
+      transition: none;
+    }
+  }
+  
+  /* Responsive design improvements */
+  @media (max-width: 768px) {
+    .rowGroup {
+      flex-direction: column;
+      gap: 22px;
+    }
+    
+    .container {
+      padding: 20px 15px;
+    }
+    
+    .formContainer {
+      padding: 20px;
+    }
+    
+    .buttonGroup {
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .submitButton, .cancelButton {
+      width: 100%;
+    }
+  }
+  
+  /* Animation subtile pour le feedback */
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+  }
+  
+  .errorInput {
+    border-color: #e53e3e; /* Mis à jour */
+    animation: shake 0.4s ease-in-out;
+  }
+  
+  .successMessage {
+    background-color: #f0fff4; /* Adapté au vert */
+    color: #45a475; /* Mis à jour */
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #c6f6d5; /* Adapté au vert */
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+  }
+  
+  .successMessage::before {
+    content: "✓";
+    margin-right: 10px;
+    font-size: 18px;
+  }

@@ -1,0 +1,121 @@
+.container {
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .title {
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .formContainer {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .input {
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid #bbb;
+    border-radius: 4px;
+    outline: none;
+    color: #333;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:focus {
+    border-color: #53c28b;
+  }
+  
+  .input::placeholder {
+    color: #aaa;
+  }
+  
+  .forgotPassword {
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .forgotPassword a {
+    color: #53c28b;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .forgotPassword a:hover {
+    color: #45a475;
+    text-decoration: underline;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    margin-top: 15px;
+  }
+  
+  .submitButton {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: #53c28b;
+    color: white;
+    width: 100%;
+  }
+  
+  .submitButton:hover {
+    background-color: #45a475;
+    transform: translateY(-2px);
+  }
+  
+  .submitButton:disabled {
+    background-color: #93d2b8;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .errorMessage {
+    background-color: #ffebee; 
+    color: #d32f2f;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    border-left: 4px solid #d32f2f;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  }

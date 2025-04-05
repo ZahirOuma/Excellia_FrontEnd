@@ -104,3 +104,7 @@
       width: 100%;
     }
   }
+  .inputError {
+    border-color: #ef4444;
+    background-color: #fef2f2;
+  }
